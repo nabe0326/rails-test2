@@ -2,6 +2,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem "rails",           "7.0.4"
+gem "bootstrap-sass",  "3.4.1"
 gem "sprockets-rails", "3.4.2"
 gem "importmap-rails", "1.1.0"
 gem "turbo-rails",     "1.1.1"
@@ -10,6 +11,7 @@ gem "jbuilder",        "2.11.5"
 gem "puma",            "5.6.4"
 gem "bootsnap",        "1.12.0", require: false
 gem "sqlite3",         "1.4.2"
+gem 'rails-controller-testing'
 
 group :development, :test do
   gem "debug",   "1.5.0", platforms: %i[ mri mingw x64_mingw ]
